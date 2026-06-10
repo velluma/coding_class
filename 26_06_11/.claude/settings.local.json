@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda env *)",
+      "PowerShell(conda env list)",
+      "PowerShell(python --version)",
+      "PowerShell(Get-ChildItem \"$env:USERPROFILE\\\\Miniconda3\", \"$env:USERPROFILE\\\\Anaconda3\", \"$env:ProgramFiles\\\\Miniconda3\", \"$env:ProgramFiles\\\\Anaconda3\" -ErrorAction SilentlyContinue | Select-Object FullName)",
+      "PowerShell(&\"C:\\\\Users\\\\DonghyunKim\\\\Miniconda3\\\\condabin\\\\conda.bat\" env list)",
+      "PowerShell(&\"C:\\\\Users\\\\DonghyunKim\\\\Miniconda3\\\\condabin\\\\conda.bat\" run -n pokemon-lesson pip list)",
+      "PowerShell(findstr -E \"notebook|lab\")",
+      "PowerShell(&\"C:\\\\Users\\\\DonghyunKim\\\\Miniconda3\\\\condabin\\\\conda.bat\" install -n pokemon-lesson notebook -y)"
+    ]
+  }
+}
